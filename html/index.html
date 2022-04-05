@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro timer</title>
+    <link rel="stylesheet" href="../main.css" />
+</head>
+<body>
+	<main>
+		<div id="text">
+			<h1>Pomodoro timer</h1>								
+			<h3>By jacsonikowy</h3>
+		</div>
+		<div class="timer1">
+			<div class="timer">
+				<p>Study Time</p>
+				<div id="study" class="minutes">
+					25:00
+				</div>				
+				<button onclick="addMinuteStudy()"><img src="../images/UP.png" height="35"></button>
+				<button onclick="subMinuteStudy()"><img src="../images/DOWN.png" height="35"></button>
+			</div>
+			<div id="shortBreak" class="timer">
+				<p>Short Break</p>
+				<div id="breakTime" class="minutes">
+					5:00
+				</div>
+				<button onclick="addMinuteBreak()"><img src="../images/UP.png" height="35"></button>
+				<button onclick="subMinuteBreak()"><img src="../images/DOWN.png" height="35"></button>
+			</div>
+		</div>
+			
+		<div class="button">
+			<button onclick="startTimer()">START</button>
+		</div>
+		
+    </main>
+<script src="../js/main.js"></script>
+</body>
+</html>
